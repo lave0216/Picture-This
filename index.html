@@ -14,16 +14,30 @@
     <div class="title">
       <h1>Picture This!</h1>
       <h4>My Really Cool Blog Post</h4>
-      <picture class="smallerthan-960">
-        <source srcset="images/mus">
+      <picture class="landscape">
+        <source srcset="images/museum-lan320.jpg, images/museum-lan640.jpg 2x, images/museum-lan960.jpg 3x" media="(max-width: 320px)">
 
+        <source srcset="images/museum-lan480.jpg, images/museum-lan960.jpg 2x, images/museum-lan1440.jpg 3x" media="(max-width: 480px)">
+
+        <source srcset="images/museum-lan720.jpg, images/museum-lan1440.jpg 2x, images/museum-lan2160.jpg 3x" media="(max-width: 720px)">
+
+        <source srcset="images/museum-lan960.jpg, images/museum-lan1920.jpg 2x, images/museum-lan2880.jpg 3x" media="(max-width: 960px)">
+
+        <img src="images/museum.jpg" alt="placeholder" class="landscape"> 
 
       </picture>
-
-
-      
     </div>
-    <img src="images/museum.jpg" alt="placeholder">
+
+       <picture class="square">
+
+       <source srcset="images/museum-squ800.jpg, images/museum-squ1600.jpg 2x, images/museum-squ2400.jpg 3x" media="(min-width: 1600px)">
+
+        <source srcset="images/museum-squ640.jpg, images/museum-squ1280.jpg 2x, images/museum-squ1920.jpg 3x" media="(min-width: 1280px)">
+
+        <source srcset="images/museum-squ480.jpg, images/museum-squ960.jpg 2x, images/museum-squ1440.jpg 3x" media="(min-width: 960px)">
+
+        <img src="images/museum.jpg" alt="placeholder" class="square"> 
+    
 
   </header>
 </body>
